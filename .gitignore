@@ -1,4 +1,12 @@
-##specify for subdir
+# compiling .tex files
+*.gz
+*.out
+*.log
+*.fls
+*.aux
+*.fdb_latexmk
+
+# specify for subdir
 .DS_Store
 *.ini
 *.sqlite
@@ -7,10 +15,10 @@ db/
 trashbin/
 deprecated_codes/
 
-# logs
-*login*
-*log*
-*log.txt
+# # logs
+# *login*
+# *log*
+# *log.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

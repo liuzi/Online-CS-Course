@@ -222,14 +222,20 @@ Answer the following questions:
         p_{ij} = \mathbf{u}_i^T\mathbf{q}_j + a_i + b_j,
     \end{equation}
     will the model capacity increase or remain the same? 
+
+    \textbf{Answer}: Yes, it makes sense to include a user-specific bias term $a_i$. The model capacity will increase as it captures individual tendencies of users to rate higher or lower than the average. For example, some users might generally give higher ratings than others. This bias term helps the model account for these tendencies, leading to more accurate predictions.
     \item \textbf{[2 points (Written)]} Consider the case with $\lambda_F=0.99$ and $\lambda_R=0.01$. Based on the train/test loss curves, does parameter sharing outperform having separate models? Please provide a brief justification to your answer.
     
+    \textbf{Answer}: Yes, parameter sharing outperforms having separate models. In the case of $\lambda_F=0.99$ and $\lambda_R=0.01$, the shared model has lower test loss compared to the separate model. This indicates that the shared model generalizes better to unseen data, which is crucial for making accurate predictions. The shared model benefits from the shared representations, which allows it to leverage information from both tasks to improve performance.
     \item \textbf{[2 points (Written)]} Now consider the case with $\lambda_F=0.5$ and $\lambda_R=0.5$.  Based on the train/test loss curves, does parameter sharing outperform having separate models? Please provide a brief justification to your answer.
     
+    \textbf{Answer}: In the case of $\lambda_F=0.5$ and $\lambda_R=0.5$, the shared model and separate model have similar test loss. This suggests that the shared model and separate model perform similarly in this setting. The shared model benefits from the shared representations, which allows it to leverage information from both tasks to improve performance. However, the separate model also performs well as it has separate representations for each task, which can capture task-specific patterns more effectively.
     \item \textbf{[2 points (Written)]} In the \textbf{shared model setting} compare results for $\lambda_F=0.99$ and $\lambda_R=0.01$ and $\lambda_F=0.5$ and $\lambda_R=0.5$, can you explain the difference in performance? Please provide a brief justification to your answer.
+    
+    \textbf{Answer}: In the shared model setting, the model with $\lambda_F=0.99$ and $\lambda_R=0.01$ outperforms the model with $\lambda_F=0.5$ and $\lambda_R=0.5$. The model with $\lambda_F=0.99$ and $\lambda_R=0.01$ assigns more weight to the factorization task compared to the regression task. This allows the model to focus more on capturing user-item interactions, which are crucial for making accurate predictions. In contrast, the model with $\lambda_F=0.5$ and $\lambda_R=0.5$ assigns equal weight to both tasks, which may lead to suboptimal performance as it does not prioritize the factorization task.
 \end{enumerate}
 
-\noindent\textbf{Your answers go here}:
+% \noindent\textbf{Your answers go here}:
 \vspace{0.8cm}
 
 
