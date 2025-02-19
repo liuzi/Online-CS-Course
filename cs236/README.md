@@ -19,14 +19,6 @@ Generative models are powerful tools used to model complex, high-dimensional dat
 - **Learning Algorithms**: Techniques for training and optimizing generative models.
 - **Applications**: Exploring how generative models are applied in fields like computer vision, natural language processing, and reinforcement learning.
 
-## Course Structure
-
-The course consists of lectures, hands-on projects, and discussions. Key components include:
-
-- **Lecture Attendance**: While in-person attendance is encouraged, recordings will be available on Canvas.
-- **Assignments**: Three homework assignments, a midterm exam, and a course project.
-- **Office Hours**: Available for additional support and clarification on course materials.
-
 ## Resources
 
 ### Lecture Notes and Materials
