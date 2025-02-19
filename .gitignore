@@ -7,6 +7,7 @@
 *.fdb_latexmk
 
 # specify for subdir
+deeplearning.ai/
 .DS_Store
 *.ini
 *.sqlite
